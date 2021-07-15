@@ -1,0 +1,15 @@
+int analogPin = A0;
+int Air_Quality_Value = 0; 
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  int Alcohol_Value = analogRead(analogPin);
+  Serial.print("Alcohol concentration : ");
+  Serial.println(Alcohol_Value);
+  /*Serial.print("ppm\n");*/
+  delay(700);
+}
